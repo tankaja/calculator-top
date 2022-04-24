@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+
+        <header>calculator</header>
+
+        <div id="container">
+
+            <div id="calcBody">
+                    
+                <div id="input">
+                    <div id="output">  
+                        <p id="outputDisplay"> </p>
+                        <p id="inputDisplay">0</p>
+                    </div>
+
+                    <button class="grid-col-span-2" onclick="clearAll()">clear</button>
+                    <button class="grid-col-span-2" onclick="del()">delete</button>
+    
+                    <button onclick="inputNumber(1)" data-key="49">1</button>
+                    <button onclick="inputNumber(2)" data-key="50">2</button>
+                    <button onclick="inputNumber(3)" data-key="51">3</button>
+                    <button onclick="inputNumber(4)" data-key="52">4</button>
+                    <button onclick="inputNumber(5)" data-key="53">5</button>
+                    <button onclick="inputNumber(6)" data-key="54">6</button>
+                    <button onclick="inputNumber(7)" data-key="55">7</button>
+                    <button onclick="inputNumber(8)" data-key="56">8</button>
+                    <button onclick="inputNumber(9)" data-key="57">9</button>
+                
+                    <button class="sidePlus" onclick="store('+')" data-key="107">+</button>
+                    <button class="sideMinus" onclick="store('-')" data-key="109">-</button>
+                    <button onclick="store('*')">*</button>
+    
+                    <button onclick="inputNumber(String.fromCharCode(46))" data-key="110">.</button>
+                    <button onclick="inputNumber(0)" data-key="48">0</button>
+                    <button onclick="equalTo()">=</button>
+                    <button onclick="store('/')">/</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+        <footer>footer</footer>
+
+    </body>
+
+</html>
