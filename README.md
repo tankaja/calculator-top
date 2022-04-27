@@ -1,4 +1,4 @@
 # calculator-top
 
-ver 1
-Taking input as string.
+ver 2
+considering input as integer throughout.
