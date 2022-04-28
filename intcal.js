@@ -1,8 +1,3 @@
-// set the default number as 0
-// when function called, take the argument value and 
-// multiply with the 10 value (to the input lenght)
-// update the input on the screen
-
 let inputCurrent = 0;
 let operatorCounter = 0;
 let lastOperand = 0;
@@ -110,7 +105,14 @@ function divide(previous, current) {
 
 function clearAll () {
     // reset all counters, all inputs and variables
+    inputCurrent = 0;
     operatorCounter = 0;
+    lastOperand = 0;
+    output = 0;
+    lastOperator = null;
+    equalCheck = false;
+    displayInput(0);
+    displayOutput(0);
 }
 
 function del() {
